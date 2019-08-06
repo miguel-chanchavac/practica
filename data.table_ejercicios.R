@@ -20,8 +20,11 @@ DTiris[,.(
 
 ?data.table
 
+#Usando .SD
 DTiris[, lapply(.SD, mean), by = Species]
 head(DTiris)
+
+#Usando .SDcols
 DTiris[, lapply(.SD, mean), by = Species, .SDcols = c(1,2)]
 DTiris[, lapply(.SD, mean), by = Species, .SDcols = c("Sepal.Length","Sepal.Width")]
 
