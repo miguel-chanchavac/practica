@@ -1,5 +1,6 @@
 library(data.table)
-?iris
+
+#Datatable ejercicio
 class(iris)
 DTiris <- as.data.table(iris)
 class(DTiris)
